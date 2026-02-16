@@ -48,3 +48,28 @@ A complete project-based MySQL mastery course using Python (CLI Library Manageme
 - CHECK constraint is enforced in MySQL 8.0+
 - FOREIGN KEY requires InnoDB engine
 - ON DELETE RESTRICT prevents deleting authors who have books
+
+## Day 3 – Basic DML & First CRUD Operations
+
+**Title of Day:** Day 3 – INSERT, SELECT, UPDATE, DELETE + Filtering & Sorting
+
+**Topic Covered:**
+- DML vs DDL
+- INSERT (single & multi-row)
+- SELECT with WHERE, LIKE, ORDER BY, LIMIT
+- UPDATE & DELETE with mandatory WHERE clause
+- Handling NULL values (IS NULL / IS NOT NULL)
+- Safe deletion using NOT EXISTS subquery
+
+**Implemented Sections:**
+- Added more test data to authors and books
+- Performed full CRUD operations
+- Demonstrated safe UPDATE/DELETE patterns
+- Queried books sorted by year (NULLs last)
+
+**Key Notes:**
+- ALWAYS use WHERE with UPDATE and DELETE
+- NULL comparison uses IS NULL / IS NOT NULL (not = NULL)
+- ORDER BY ... NULLS LAST is very useful (MySQL 8.0.21+) and ISNULL() for older than MySQL 8.0.21
+- Multi-row INSERT is more efficient
+- Test DELETE with subquery to avoid deleting parents with children
