@@ -73,3 +73,29 @@ A complete project-based MySQL mastery course using Python (CLI Library Manageme
 - ORDER BY ... NULLS LAST is very useful (MySQL 8.0.21+) and ISNULL() for older than MySQL 8.0.21
 - Multi-row INSERT is more efficient
 - Test DELETE with subquery to avoid deleting parents with children
+
+## Day 4 – Advanced Filtering & Pattern Matching
+
+**Title of Day:** Day 4 – Powerful WHERE clause (LIKE, REGEXP, IN, BETWEEN, compound conditions)
+
+**Topic Covered:**
+- LIKE vs REGEXP (use cases & performance)
+- Common LIKE patterns (% , _)
+- REGEXP for complex patterns (digits, length, alternations)
+- Combining conditions with AND/OR/NOT + parentheses importance
+- IN / NOT IN
+- BETWEEN
+- NULL-safe comparisons (IS NULL / IS NOT NULL)
+
+**Implemented Sections:**
+- Multiple pattern-based search queries on books & authors
+- Compound conditions with logical operators
+- Safe NULL handling
+- Sorted and filtered result sets
+
+**Key Notes:**
+- LIKE '%...%' usually causes full table scan
+- REGEXP almost always full scan
+- Parentheses are critical in mixed AND/OR conditions
+- NULL comparison must use IS NULL / IS NOT NULL
+- Test complex WHERE clauses with SELECT before UPDATE/DELETE
