@@ -99,3 +99,32 @@ A complete project-based MySQL mastery course using Python (CLI Library Manageme
 - Parentheses are critical in mixed AND/OR conditions
 - NULL comparison must use IS NULL / IS NOT NULL
 - Test complex WHERE clauses with SELECT before UPDATE/DELETE
+
+
+## Day 6 – Aggregation, GROUP BY & HAVING
+
+**Title of Day:** Day 6 – GROUP BY, Aggregate Functions, HAVING + statistical reports
+
+**Topic Covered:**
+- Aggregate functions: COUNT, SUM, AVG, MIN, MAX
+- GROUP BY clause
+- HAVING vs WHERE
+- Combining JOIN + GROUP BY
+- Grouping by calculated values (decade example)
+- Finding max/min per group with subquery
+
+**Implemented Sections:**
+- Books count per author (including zero)
+- Average price per author with minimum book count filter
+- Total price of available books
+- Most expensive book per author
+- Books count by decade
+
+**Key Notes:**
+- Non-aggregated columns in SELECT must appear in GROUP BY
+- HAVING filters groups (after aggregation), WHERE filters rows (before)
+- Use LEFT JOIN when you want to include groups with zero count
+- Test aggregate queries with small data first
+- FLOOR(year / 10) * 10 is a common way to group by decade
+
+Next: Day 7 – Subqueries, CTEs & Window Functions
