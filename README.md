@@ -101,6 +101,32 @@ A complete project-based MySQL mastery course using Python (CLI Library Manageme
 - Test complex WHERE clauses with SELECT before UPDATE/DELETE
 
 
+## Day 5 – JOINs & Combining Data from Multiple Tables
+
+**Title of Day:** Day 5 – INNER JOIN, LEFT JOIN, RIGHT JOIN + combined reports
+
+**Topic Covered:**
+- Difference between INNER, LEFT, RIGHT JOIN
+- Using table aliases for readability
+- Joining on foreign key (author_id → authors.id)
+- Handling missing matches (NULL values in LEFT JOIN)
+- Aggregate with JOIN (COUNT books per author)
+- Finding max value per group with subquery + JOIN
+
+**Implemented Sections:**
+- Basic INNER JOIN for matched records
+- LEFT JOIN to include all books/authors
+- Counting books per author (including zero)
+- Finding most expensive book per author
+
+**Key Notes:**
+- INNER JOIN = only matching rows from both tables
+- LEFT JOIN = all from left table + matching from right (NULL if no match)
+- Always write ON condition to avoid accidental CROSS JOIN
+- Use aliases (b for books, a for authors) in every real project
+- Test JOIN with small SELECT before adding GROUP BY / aggregates
+
+
 ## Day 6 – Aggregation, GROUP BY & HAVING
 
 **Title of Day:** Day 6 – GROUP BY, Aggregate Functions, HAVING + statistical reports
@@ -126,5 +152,3 @@ A complete project-based MySQL mastery course using Python (CLI Library Manageme
 - Use LEFT JOIN when you want to include groups with zero count
 - Test aggregate queries with small data first
 - FLOOR(year / 10) * 10 is a common way to group by decade
-
-Next: Day 7 – Subqueries, CTEs & Window Functions
