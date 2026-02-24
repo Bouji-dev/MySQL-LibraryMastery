@@ -152,3 +152,31 @@ A complete project-based MySQL mastery course using Python (CLI Library Manageme
 - Use LEFT JOIN when you want to include groups with zero count
 - Test aggregate queries with small data first
 - FLOOR(year / 10) * 10 is a common way to group by decade
+
+
+## Day 7 – Subqueries, CTEs & Window Functions
+
+**Title of Day:** Day 7 – Subqueries (scalar/correlated), Common Table Expressions, basic Window Functions
+
+**Topic Covered:**
+- Subquery in WHERE, SELECT, FROM
+- Correlated vs non-correlated subqueries
+- CTE (WITH clause) for readability and reuse
+- Window Functions: ROW_NUMBER, RANK, DENSE_RANK
+- PARTITION BY + ORDER BY in OVER clause
+- Combining CTE/Subquery with JOIN
+
+**Implemented Sections:**
+- Books more expensive than average
+- Authors with expensive books (subquery IN)
+- Global and per-author ranking with ROW_NUMBER
+- Second most expensive book with DENSE_RANK
+- CTE for average price comparison
+
+**Key Notes:**
+- Correlated subqueries can be slow on large tables
+- CTE improves readability and allows reuse
+- Window functions keep all rows (unlike GROUP BY)
+- Always include OVER clause in window functions
+- Subquery in FROM needs alias
+
