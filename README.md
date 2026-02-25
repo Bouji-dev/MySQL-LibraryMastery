@@ -180,3 +180,29 @@ A complete project-based MySQL mastery course using Python (CLI Library Manageme
 - Always include OVER clause in window functions
 - Subquery in FROM needs alias
 
+
+## Day 8 – Views & Materialized Views Workaround
+
+**Title of Day:** Day 8 – Creating, using and managing Views + workaround for Materialized Views in MySQL
+
+**Topic Covered:**
+- What is a View (virtual table)
+- Simple vs Complex Views
+- Updatable Views rules and limitations
+- Security & abstraction benefits
+- Materialized Views absence in MySQL → workaround with physical table + triggers + events
+- Refresh strategies (trigger-based, scheduled event)
+
+**Implemented Sections:**
+- View for available books with author names
+- View for most expensive book per author
+- Physical table + trigger for author book count
+- Event scheduler for periodic refresh
+
+**Key Notes:**
+- Views are just stored queries – executed on the fly
+- Complex Views are read-only in most cases
+- Updatable Views have strict rules (single table, no aggregates, etc.)
+- Materialized Views workaround is common: table + triggers + events
+- Always test performance when using Views in production
+
