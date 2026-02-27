@@ -206,3 +206,27 @@ A complete project-based MySQL mastery course using Python (CLI Library Manageme
 - Materialized Views workaround is common: table + triggers + events
 - Always test performance when using Views in production
 
+## Day 9 – Indexes, EXPLAIN & Performance Tuning
+
+**Title of Day:** Day 9 – Understanding Indexes, creating them, analyzing queries with EXPLAIN
+
+**Topic Covered:**
+- What is an Index and how it speeds up queries
+- Types: PRIMARY, UNIQUE, INDEX, FULLTEXT, Composite
+- Creating / Dropping / Viewing Indexes
+- EXPLAIN output analysis (type, key, rows, Extra)
+- Best practices for indexing foreign keys, WHERE, ORDER BY columns
+- Trade-offs: speed vs write performance & disk space
+
+**Implemented Sections:**
+- Added indexes on author_id, composite (author_id + year), price
+- Compared EXPLAIN before/after indexing
+- Tested FULLTEXT search on title
+- Analyzed selectivity and useless indexes
+
+**Key Notes:**
+- Index on foreign keys is almost always necessary
+- Composite index order matters (leftmost prefix rule)
+- EXPLAIN 'type=ALL' → full scan → add index!
+- Over-indexing slows down writes and wastes space
+- FULLTEXT for natural language search, not exact matches
